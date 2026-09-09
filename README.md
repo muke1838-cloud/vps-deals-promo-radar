@@ -2,7 +2,7 @@
 
 Public snapshots of VPS pricing and promotions from official provider pages. Static site. No runtime LLM. No API keys.
 
-**Live site (after deploy):** https://vps-deals-promo-radar.pages.dev  
+**Live site:** https://vps-deals-promo-radar-9p1.pages.dev  
 **This repo:** https://github.com/muke1838-cloud/vps-deals-promo-radar
 
 ## Defaults filled on first build

@@ -1,7 +1,7 @@
 ILANG
 [TYPE:config][PROJECT:vps-deals][LANG:zh]
 
-::STATE{@SITE, brand:vps-deals, niche:vps-hosting, domain:vps-deals-promo-radar.pages.dev, locale:en-US, display_brand:VPS Deals}
+::STATE{@SITE, brand:vps-deals, niche:vps-hosting, domain:vps-deals-promo-radar-9p1.pages.dev, locale:en-US, display_brand:VPS Deals}
 
 ::MODULE{PROVIDERS|title:抓哪几家 这里改了站就变}
 DigitalOcean | https://www.digitalocean.com | https://www.digitalocean.com/pricing |
