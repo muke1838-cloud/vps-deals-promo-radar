@@ -1,0 +1,25 @@
+ILANG
+[TYPE:config][PROJECT:vps-deals][LANG:zh]
+
+::STATE{@SITE, brand:vps-deals, niche:vps-hosting, domain:vps-deals-promo-radar.pages.dev, locale:en-US, display_brand:VPS Deals}
+
+::MODULE{PROVIDERS|title:抓哪几家 这里改了站就变}
+DigitalOcean | https://www.digitalocean.com | https://www.digitalocean.com/pricing |
+Hetzner | https://www.hetzner.com | https://www.hetzner.com/cloud/ |
+Contabo | https://www.contabo.com | https://www.contabo.com/en/vps/ |
+OVHcloud | https://www.ovhcloud.com | https://www.ovhcloud.com/en/vps/ |
+Hostinger | https://www.hostinger.com | https://www.hostinger.com/vps-hosting |
+
+::MODULE{FIELDS|title:每条优惠提取什么}
+title price currency offer_url valid_until source_url fetched_at
+
+::MODULE{RENDER|title:页面怎么用这些字段}
+locale_currency: USD
+expired: mark expired, never present as in-stock
+missing_price: omit price fields and omit schema price
+empty_affiliate: use offer_url as the outbound link
+update_every: 6h
+
+::RULE{抓不到 price⇒这条不写 price 字段 也不写进结构化数据 不许拿估的填}
+::RULE{valid_until 已过⇒标记过期或下架 不许留着冒充有效}
+::BOUNDARY{never:编优惠 编价格 编佣金|scope:permanent}

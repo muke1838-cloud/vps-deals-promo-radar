@@ -1,0 +1,13 @@
+ILANG
+[TYPE:config][PROJECT:fixture][LANG:zh]
+
+::STATE{@SITE, brand:fixture-deals, niche:vps-hosting, domain:example.test, locale:en-US, display_brand:Fixture Deals}
+
+::MODULE{PROVIDERS|title:抓哪几家 这里改了站就变}
+Beta | https://beta.example | https://beta.example/deals |
+
+::MODULE{FIELDS|title:每条优惠提取什么}
+title price currency offer_url valid_until source_url fetched_at
+
+::MODULE{RENDER|title:页面怎么用这些字段}
+locale_currency: USD
