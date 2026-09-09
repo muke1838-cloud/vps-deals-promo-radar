@@ -139,4 +139,4 @@ Locale under test: en-US. Brand under test: vps-deals.
 | --- | --- | --- | --- |
 | T01–T13 | pass | `python3 -m unittest tests/test_pipeline.py` — 15 tests OK | 2026-09-09 |
 | T14 | pass | `python3 scraper.py` wrote 5 providers / 4 offers / 3 priced (Contabo JSON-LD only). `python3 build.py` wrote 12 page records under `site/` | 2026-09-09 |
-| T15 | pending | public URL | |
+| T15 | pass | GET https://vps-deals-promo-radar-9p1.pages.dev/ (and compare/about/contabo/deal/robots/sitemap) HTTP 200; robots sitemap host is the 9p1 hostname | 2026-09-09 |
