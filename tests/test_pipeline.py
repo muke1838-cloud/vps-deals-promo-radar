@@ -304,6 +304,8 @@ class SourceHonestyTests(unittest.TestCase):
         self.assertIn('cron: "0 */6 * * *"', text)
         self.assertIn("python scraper.py", text)
         self.assertIn("python build.py", text)
+        self.assertIn("wrangler@4 pages deploy site", text)
+        self.assertIn("vps-deals-promo-radar", text)
 
 
 if __name__ == "__main__":
