@@ -24,8 +24,8 @@ Affiliate slots are empty. Outbound buttons use the provider URL. Commissions ar
 
 1. `scraper.py` reads `.ilang/site.ilang`, respects robots.txt, fetches those URLs, and writes `data/offers.json`.
 2. `build.py` reads the same config plus `offers.json` and writes `site/`.
-3. GitHub Actions runs both every 6 hours and commits if the snapshot changed.
-4. Cloudflare Pages publishes `site/` (build command `python3 build.py`, output `site/`).
+3. GitHub Actions runs both every 6 hours, commits if the snapshot changed, and deploys `site/` to Cloudflare Pages with Wrangler. The Pages project is Direct Upload, so Git-connect is not used.
+4. Live host: https://vps-deals-promo-radar-9p1.pages.dev
 
 If a public page has no machine-readable price, the `price` field is omitted. Expired `valid_until` values are marked expired and are not shown as in-stock.
 

@@ -110,7 +110,7 @@ Locale under test: en-US. Brand under test: vps-deals.
 ### T13 — Actions cron every 6 hours
 - Priority: P0
 - Scene: workflow file
-- Expected: `.github/workflows/update.yml` has `cron: "0 */6 * * *"` and runs scraper then build
+- Expected: `.github/workflows/update.yml` has `cron: "0 */6 * * *"` and runs scraper then build then Wrangler Pages deploy
 - Evidence: unittest `test_workflow_cron` and file in repo
 
 ### T14 — Local build produces site/
@@ -137,6 +137,6 @@ Locale under test: en-US. Brand under test: vps-deals.
 
 | ID | Result | Evidence | When |
 | --- | --- | --- | --- |
-| T01–T13 | pass | `python3 -m unittest tests/test_pipeline.py` — 15 tests OK | 2026-09-09 |
-| T14 | pass | `python3 scraper.py` wrote 5 providers / 4 offers / 3 priced (Contabo JSON-LD only). `python3 build.py` wrote 12 page records under `site/` | 2026-09-09 |
-| T15 | pass | GET https://vps-deals-promo-radar-9p1.pages.dev/ (and compare/about/contabo/deal/robots/sitemap) HTTP 200; robots sitemap host is the 9p1 hostname | 2026-09-09 |
+| T01–T13 | pass | `python3 tests/test_pipeline.py` — 15 tests OK after Wrangler deploy step was added | 2026-09-09 |
+| T14 | pass | GitHub Actions run 34341676101: scrape + build + commit + `wrangler pages deploy` all green | 2026-09-09 |
+| T15 | pass | GET https://vps-deals-promo-radar-9p1.pages.dev/ HTTP 200. Latest deployment `5f391c38` homepage/sitemap 200; removed Contabo deal path 404 on that deployment. Production host may cache old deal URLs briefly. | 2026-09-09 |
