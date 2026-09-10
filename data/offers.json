@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T20:45:00+00:00",
+  "generated_at": "2026-09-10T04:01:10+00:00",
   "locale": "en-US",
   "brand": "vps-deals",
   "config_source": ".ilang/site.ilang",
@@ -84,7 +84,7 @@
       "title": "VPS",
       "offer_url": "https://www.ovhcloud.com/en/vps/",
       "source_url": "https://www.ovhcloud.com/en/vps/",
-      "fetched_at": "2026-09-09T20:45:00+00:00",
+      "fetched_at": "2026-09-10T04:01:10+00:00",
       "extract_method": "jsonld-product",
       "status": "active"
     }
