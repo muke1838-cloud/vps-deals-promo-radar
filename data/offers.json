@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T21:21:04+00:00",
+  "generated_at": "2026-09-25T04:19:39+00:00",
   "locale": "en-US",
   "brand": "vps-deals",
   "config_source": ".ilang/site.ilang",
@@ -26,11 +26,11 @@
       "source_url": "https://www.hetzner.com/cloud/",
       "affiliate_url": null,
       "robots_allowed": true,
-      "robots_note": "robots_missing_or_error_fail_open_for_public_docs",
-      "status": "fetch_error",
-      "http_status": 0,
+      "robots_note": "https://www.hetzner.com/robots.txt",
+      "status": "ok_no_structured_offers",
+      "http_status": 200,
       "final_url": "https://www.hetzner.com/cloud/",
-      "error": "[Errno 104] Connection reset by peer",
+      "error": null,
       "offer_count": 0
     },
     {
@@ -84,7 +84,7 @@
       "title": "VPS",
       "offer_url": "https://www.ovhcloud.com/en/vps/",
       "source_url": "https://www.ovhcloud.com/en/vps/",
-      "fetched_at": "2026-09-24T21:21:04+00:00",
+      "fetched_at": "2026-09-25T04:19:39+00:00",
       "extract_method": "jsonld-product",
       "status": "active"
     }
